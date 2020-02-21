@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+    id "org.springframework.boot" version "2.2.4.RELEASE"
+}
+
+group 'com.reproduce'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'io.projectreactor.netty', name: 'reactor-netty', version: '0.9.4.RELEASE'
+    implementation group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.30'
+}
